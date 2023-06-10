@@ -1,0 +1,378 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e89d6834-728c-4ead-bb84-5ac713ca9a70" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Inventory</ID>
+  <Name>Inventory</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10210" scrolltop="-2341" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30459" y="15663" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimStore" left="6696" top="7" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3323" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fb0c000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimStore" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactInventory" left="761" top="906" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3535" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000cf0d00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactInventory" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimFilm" left="20" top="5973" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="4276" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b410000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimFilm" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3996" top="1841" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactInventory_StoreKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="16" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6696" y="2240" />
+              <point x="5496" y="2240" />
+              <point x="5496" y="2239" />
+              <point x="4296" y="2239" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1759" top="3273" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="1069" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactInventory_FilmKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2158" y="5973" />
+              <point x="2158" y="4773" />
+              <point x="2528" y="4773" />
+              <point x="2528" y="3573" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-10210</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2341</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>7</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="445eacbe-5c19-4d42-b5ef-0b9baae2f256">
+      <ID>Film</ID>
+      <Name>Film</Name>
+      <DimensionID>Film</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="af662656-2ac1-40e0-b8df-5984102cbd91">
+          <AttributeID>Film Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5734d7d1-e3bc-4da1-84b0-60177faf89c5">
+          <AttributeID>Film ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3ea51924-87ba-40d8-a041-dfa65a503ba5">
+          <AttributeID>Film Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ab53488-c0d0-4b5f-b76a-d991efcdae60">
+          <AttributeID>Film Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b45e1547-83c1-4684-8a6c-2527fbdd055f">
+          <AttributeID>Film Release Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aef5db93-bffa-4ce0-aba2-0d1b16bb0b49">
+          <AttributeID>Film Language</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="214f5a19-c64b-4be4-a6c7-45c37d6850c7">
+          <AttributeID>Film Rental Duration</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20e952e1-f406-4a04-be06-a95dc6bf5076">
+          <AttributeID>Film Rental Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3fce68e1-dbcc-4c02-bab6-27a27a95a2d6">
+          <AttributeID>Film Length</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55aa2bea-93ce-4814-9aad-80a3d7caed1a">
+          <AttributeID>Film Replacement Cost</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6902633d-c864-49e5-8a08-3b2bd6d18f94">
+          <AttributeID>Film Rating</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f12007b1-3e9a-4a94-8d1e-aa15f3ffd526">
+          <AttributeID>Has Trailer</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="458bc682-683d-4cf1-a914-c00944d4a069">
+          <AttributeID>Has Commentary</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0e87a7b0-9df4-4baa-93d1-7a9a290ddc1d">
+          <AttributeID>Has Deleted Scene</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e25f6f9-b838-49fb-b54d-19befe3bfa4f">
+          <AttributeID>Has Behind The Scene</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b0b1eb7d-c88d-4ed2-a168-15916ce94263">
+          <AttributeID>Is Category Action</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a9ad734-e96b-43c9-8420-1cc4d40592f2">
+          <AttributeID>Is Category Adventure</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d022199-5482-4237-a347-44b008880dbb">
+          <AttributeID>Is Category Animation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="238639c7-b6f8-4df5-adb5-e9e57e66d946">
+          <AttributeID>Is Category Comedy</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2c5695cb-007f-4412-b783-212dfd04d109">
+          <AttributeID>Is Category Documentary</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7f1bc0e9-8ace-4636-b55e-46ed8e75b20d">
+          <AttributeID>Is Category Drama</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3dcba508-4b32-424d-b841-d46dddec7347">
+          <AttributeID>Is Category Fantasy</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b8f4a59-2c6e-422a-b232-db9e2b5511bd">
+          <AttributeID>Is Category Historical</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0d1bdecb-a998-4647-8a9b-00b0f03c5d50">
+          <AttributeID>Is Category Horror</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1935ea22-1df7-458b-b548-cea213766528">
+          <AttributeID>Is Category Musical</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49cbd6be-ef71-4390-8a9e-51fbb9ca0dc7">
+          <AttributeID>Is Category Noir</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92abed10-f4e8-4f4c-95d5-f1a52718cea9">
+          <AttributeID>Is Category Romance</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="84074175-68ad-46aa-840d-73de5d98eb1c">
+          <AttributeID>Is Category Sci Fi</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2bdb45a5-643b-462f-8677-daa6fd1aeddf">
+          <AttributeID>Is Category Sports</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cdee0fe1-4166-4e72-9d45-a8bbebe864f6">
+          <AttributeID>Is Category Thriller</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c803b98f-3632-4b82-8b75-271930b6a1e0">
+          <AttributeID>Is Category Western</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1382201b-8da7-4d9d-98ed-c1b9afacfed3">
+      <ID>Store</ID>
+      <Name>Store</Name>
+      <DimensionID>Store</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b5d9aa78-2437-4dd0-aec6-0bcb7315c7bf">
+          <AttributeID>Store Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="824d18bf-b291-4609-a674-615c616def92">
+          <AttributeID>Store ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8537acfe-4366-42b2-a0b8-2a80e9d8b817">
+          <AttributeID>Store Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51f89f25-e308-4e6b-9791-0f6f83cbbc40">
+          <AttributeID>Store Address2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a20876b-d1b8-43b3-993f-030796ac6c1c">
+          <AttributeID>Store District</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="26d9ae04-ab7a-4780-8559-2169df31663d">
+          <AttributeID>Store City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6ec9f05-fba0-4af8-be36-7f053586c1ed">
+          <AttributeID>Store Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="422620bf-96f5-40ec-80ee-cc12ef11b939">
+          <AttributeID>Store Postal Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="42aad196-7e33-4bb6-83bc-0817071a6461">
+          <AttributeID>Store Phone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94a156f9-7323-433a-a5ca-5bbc49a91ae3">
+          <AttributeID>Store Manager</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6fe10696-d721-47c4-b5bb-8fa73a2442d2">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3e25615f-af19-44b0-a4d7-91a5ce5c07bf">
+      <ID>Fact Inventory</ID>
+      <Name>Fact Inventory</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1c62c67d-8876-44c9-85a6-8b5a87cfdfa4">
+          <ID>Default Stock Level</ID>
+          <Name>Default Stock Level</Name>
+          <Source dwd:design-time-name="5a9182ca-cd00-45e5-b0b1-6c7dd9c07901">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bcafc614-2bab-43ad-9d36-126687d70134">
+              <TableID>dbo_FactInventory</TableID>
+              <ColumnID>DefaultStockLevel</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="eba36b76-0219-4c9e-a1a7-7bd4beaa07e3">
+          <ID>Quantity Rented</ID>
+          <Name>Quantity Rented</Name>
+          <Source dwd:design-time-name="e7128bc5-50bf-4ef3-8e44-2f3326d58ca6">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e1a4f3ab-8804-49ed-9159-6b10f1ea4e33">
+              <TableID>dbo_FactInventory</TableID>
+              <ColumnID>QuantityRented</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c41f14a7-ec36-449c-bc5e-d97a0ec71c24">
+          <ID>Current Stock Level</ID>
+          <Name>Current Stock Level</Name>
+          <Source dwd:design-time-name="de1ebb0c-60c7-4da8-b935-4837bad64852">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d538421d-087d-4948-ad3f-ec9284ce2860">
+              <TableID>dbo_FactInventory</TableID>
+              <ColumnID>CurrentStockLevel</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="017b2f5c-1e6c-466e-baf7-db755e25ab90">
+          <ID>Fact Inventory Count</ID>
+          <Name>Fact Inventory Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="1f797dfa-b5eb-4c63-a79a-cb75c3ebe564">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c2832b90-5038-4a5b-a050-9fed36e882ee">
+              <TableID>dbo_FactInventory</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e5ce6bc5-46f1-4f88-a396-bf16f114d15c">
+          <CubeDimensionID>Film</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0e803438-832b-4558-b0e1-da1cb38faa88">
+              <AttributeID>Film Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f01748bb-de8b-4959-9681-b132fa0ae479">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f8cd84f9-057b-4494-b1df-4645c2c1eb6f">
+                    <TableID>dbo_FactInventory</TableID>
+                    <ColumnID>FilmKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9c016ede-ab5e-4942-a997-e62a15209b23">
+          <CubeDimensionID>Store</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7c60f84a-6d32-4fc9-98a3-92aeaae0e0dc">
+              <AttributeID>Store Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a258072d-cb9d-44a3-8ffb-1f299b477752">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ce73f19f-77f5-4bbf-8b4c-c31230fdf5b7">
+                    <TableID>dbo_FactInventory</TableID>
+                    <ColumnID>StoreKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="d92649e5-2e62-4eeb-867f-be94e994cca7">
+    <DataSourceViewID>Sakila DW</DataSourceViewID>
+  </Source>
+</Cube>

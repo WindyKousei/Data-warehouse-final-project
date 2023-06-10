@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.Sakila"
+  DTS:DTSID="{009B2E52-6D1F-46AB-A630-E753145090D3}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=Sakila;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Sakila ETL-{009B2E52-6D1F-46AB-A630-E753145090D3}localhost.Sakila;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

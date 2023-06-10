@@ -1,0 +1,705 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9ecbe377-7f29-405e-82ae-1a0698ef3f87" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Film</ID>
+  <Name>Film</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="20c0e663-f91d-4c21-9437-665f266da9b6">
+    <DataSourceViewID>Sakila DW</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <ErrorConfiguration dwd:design-time-name="2bb9244e-3302-46d4-a874-4073a2c26a3f">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="04e1accd-0265-492b-a3e4-12bd08f4019d">
+      <ID>Film Key</ID>
+      <Name>Film Key</Name>
+      <Type>ID</Type>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f9ee1ad-8f63-4e4c-a448-31557ebda851">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e599c932-03c5-4d1b-8391-9d0df3faa379">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="99677690-c34d-4e78-a044-26d5fde58f41">
+          <AttributeID>Film ID</AttributeID>
+          <Name>Film ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0902564f-c89d-4065-824e-c21ab08dd788">
+          <AttributeID>Film Title</AttributeID>
+          <Name>Film Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e143479e-8ee7-462a-ac0c-d11da2ceac58">
+          <AttributeID>Film Description</AttributeID>
+          <Name>Film Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b968cccb-22d8-464f-9be4-7983e9c3426d">
+          <AttributeID>Film Release Year</AttributeID>
+          <Name>Film Release Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e2bb47ac-78e9-43d9-9c07-9c9e6970c85b">
+          <AttributeID>Film Language</AttributeID>
+          <Name>Film Language</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="319a80ce-48ab-4b5e-87b7-f3ade6af6289">
+          <AttributeID>Film Rental Duration</AttributeID>
+          <Name>Film Rental Duration</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="88599ad8-fd01-481c-837f-784e8194abe0">
+          <AttributeID>Film Rental Rate</AttributeID>
+          <Name>Film Rental Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dc60c85c-74bd-4997-b4fd-0a8d615a3f60">
+          <AttributeID>Film Length</AttributeID>
+          <Name>Film Length</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ae96adac-2746-4d4b-afc7-9b91e6f47a8c">
+          <AttributeID>Film Replacement Cost</AttributeID>
+          <Name>Film Replacement Cost</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="90247e70-2c5b-4fe5-b231-3134148d4234">
+          <AttributeID>Film Rating</AttributeID>
+          <Name>Film Rating</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8fda1ffa-7a7d-44a6-bfff-ee3c75080110">
+          <AttributeID>Has Trailer</AttributeID>
+          <Name>Has Trailer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1804af29-a99c-42f8-8572-5baeb18e07db">
+          <AttributeID>Has Commentary</AttributeID>
+          <Name>Has Commentary</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="be2df929-45a4-47dc-a57b-4e4e80b1dbc6">
+          <AttributeID>Has Deleted Scene</AttributeID>
+          <Name>Has Deleted Scene</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="129318ae-5f70-4ba9-b926-9733c111f3b3">
+          <AttributeID>Has Behind The Scene</AttributeID>
+          <Name>Has Behind The Scene</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4476d478-d7ed-4101-a4e6-ff1fda197d26">
+          <AttributeID>Is Category Action</AttributeID>
+          <Name>Is Category Action</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="38bbe2a8-284f-461d-8805-45d7073e9511">
+          <AttributeID>Is Category Adventure</AttributeID>
+          <Name>Is Category Adventure</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="02972a1b-8f69-4481-a363-cda561f17603">
+          <AttributeID>Is Category Animation</AttributeID>
+          <Name>Is Category Animation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c39af5e1-dae0-40da-afa4-e9c9e7ac0190">
+          <AttributeID>Is Category Comedy</AttributeID>
+          <Name>Is Category Comedy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="90d752ad-0454-4d68-b4d6-99e92cadf3c7">
+          <AttributeID>Is Category Documentary</AttributeID>
+          <Name>Is Category Documentary</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eee0a095-a034-43f3-b1df-c7fca8668f6f">
+          <AttributeID>Is Category Drama</AttributeID>
+          <Name>Is Category Drama</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c6faa666-5c59-4e24-8a9e-4b10617f88a6">
+          <AttributeID>Is Category Fantasy</AttributeID>
+          <Name>Is Category Fantasy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="65f9c5c6-7a61-44d1-b4a1-b763df2cef97">
+          <AttributeID>Is Category Historical</AttributeID>
+          <Name>Is Category Historical</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="033898a3-434b-4800-adb1-313332c2f405">
+          <AttributeID>Is Category Horror</AttributeID>
+          <Name>Is Category Horror</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f1d392e9-673f-44a6-9226-c4729a7ac173">
+          <AttributeID>Is Category Musical</AttributeID>
+          <Name>Is Category Musical</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="98628bbb-a8b2-4727-95d1-a098fe40608e">
+          <AttributeID>Is Category Noir</AttributeID>
+          <Name>Is Category Noir</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9cd84adc-0bf7-41c7-899f-05bd027f7d6d">
+          <AttributeID>Is Category Romance</AttributeID>
+          <Name>Is Category Romance</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="40c2bde9-9e8a-40eb-9475-1a7bde127dfd">
+          <AttributeID>Is Category Sci Fi</AttributeID>
+          <Name>Is Category Sci Fi</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="169ff5dd-1d0b-435f-8c32-ff93a9649295">
+          <AttributeID>Is Category Sports</AttributeID>
+          <Name>Is Category Sports</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="af90fcfc-a0f1-4205-b623-51264c29ec0e">
+          <AttributeID>Is Category Thriller</AttributeID>
+          <Name>Is Category Thriller</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5955830c-c117-447f-a9c7-0bdd825ef8b2">
+          <AttributeID>Is Category Western</AttributeID>
+          <Name>Is Category Western</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cee91422-3c98-4baf-8c42-e3f4c48e374f">
+      <ID>Film ID</ID>
+      <Name>Film ID</Name>
+      <Type>ID</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60746c15-a5e4-4344-a600-2837597ed980">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dd02eba3-d441-4bbc-ba80-608a2cd3ceb3">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c9f72837-7363-474f-8802-9f05e5bd22f7">
+      <ID>Film Title</ID>
+      <Name>Film Title</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b85112dd-7853-4ef0-8848-59409258b990">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd67f93e-6134-4bfe-a238-b3f0f48f3e41">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmTitle</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0a74eed6-5294-45fe-b297-2f0778ce3ace">
+      <ID>Film Description</ID>
+      <Name>Film Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="28c20611-d6ad-4389-95a8-716cee2bfdf1">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82ee9f06-eaa8-4ae3-81c8-433aa634f15e">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="254963ae-ec27-4aba-8154-41bd8dd8402e">
+      <ID>Film Release Year</ID>
+      <Name>Film Release Year</Name>
+      <Type>Years</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9bb4f4c6-57c2-475b-bd5c-0654a8e13ada">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a72436e3-64f1-4d92-ad3f-9cc1ecb6e434">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmReleaseYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4ffd13e5-8366-41bd-8f6c-3efc1505f270">
+      <ID>Film Language</ID>
+      <Name>Film Language</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="effc8bf1-4181-404e-b4d0-569e90c20c9b">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d815f1ee-e29e-4dd5-a70d-74d1b9d13b74">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmLanguage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2fb1848a-e899-4457-abd1-2c50b1aad3ee">
+      <ID>Film Rental Duration</ID>
+      <Name>Film Rental Duration</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa8f68e1-57fc-4bae-b890-50fb016c2fee">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8502e7cc-a192-438d-a17e-e3d9a5b935ab">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmRentalDuration</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e49a96b0-f03c-43c0-98bf-198c4ce59ca7">
+      <ID>Film Rental Rate</ID>
+      <Name>Film Rental Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d6344ae-9eff-486b-916d-e83f0b0087d5">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="30cc136a-9acf-4d27-ad60-52064efa374a">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmRentalRate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dabe3228-d6f8-450e-9310-9c9ffc05ae97">
+      <ID>Film Length</ID>
+      <Name>Film Length</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41d8263a-fbde-4643-aeb8-ef046f74fa15">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8b6ae69-2f3a-400f-8592-3b99660f68e3">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmLength</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ba27c401-001e-4b41-85ad-62a73b4695ec">
+      <ID>Film Replacement Cost</ID>
+      <Name>Film Replacement Cost</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d8d2657-46dc-4008-87e1-bb7affad0c68">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9e3e7d6-26b7-4982-bbb5-fcbe646ac46a">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmReplacementCost</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ef968936-015f-4b25-8f05-6e8ba3b0ad89">
+      <ID>Film Rating</ID>
+      <Name>Film Rating</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e1ea1155-9958-4b1e-9313-5ba48d090b22">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7b0c1e6-7027-4aec-92b3-aa9a3b61e528">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>FilmRating</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1b707d55-ca04-4375-8188-adf548f97cf3">
+      <ID>Has Trailer</ID>
+      <Name>Has Trailer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2985a055-800f-4b0b-b6ab-33d8a310b226">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6df4ea5-7e42-4467-bdfb-f790dd5959ab">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>HasTrailer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ee9a63e0-a013-40b8-8866-e1ced006e639">
+      <ID>Has Commentary</ID>
+      <Name>Has Commentary</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a02b2927-c07d-4e20-ad24-5d11616fdfa1">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="61a15ba8-19ce-4269-89f3-4905fbd3e894">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>HasCommentary</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2c569627-5239-4175-b923-ceb4f7187f22">
+      <ID>Has Deleted Scene</ID>
+      <Name>Has Deleted Scene</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="adfe835c-6ec5-4f87-8cd0-c13806b52a9e">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="99e51440-4f3f-4e75-86c7-6b3f36390e94">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>HasDeletedScene</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f5260dfb-913e-446e-8de5-d38197e56838">
+      <ID>Has Behind The Scene</ID>
+      <Name>Has Behind The Scene</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ef244a7e-26d2-43d9-aa36-9433fabcb5a6">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b052ac61-fdfc-4bbc-af9c-d6cb62a7096b">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>HasBehindTheScene</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="84a76a15-6e52-48aa-b7a8-91d0d88dae03">
+      <ID>Is Category Action</ID>
+      <Name>Is Category Action</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9401618b-3d41-4657-8672-308fde033875">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="947358ef-852e-4a23-b1b2-269551818310">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryAction</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3725df9c-ec5f-4a4a-aa98-da4e5dd671f1">
+      <ID>Is Category Adventure</ID>
+      <Name>Is Category Adventure</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="740699db-9f6a-4c30-a3b5-666cc50c29a9">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b849e4d6-325d-4a18-ad2f-3c3746306e1d">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryAdventure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d414dd8-8e21-45b1-8f01-79d5fc02bc35">
+      <ID>Is Category Animation</ID>
+      <Name>Is Category Animation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c10b7f4d-f3c0-41b3-afad-113a517b57c8">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c03ec16e-9436-4142-9be9-e6f5bc15a224">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryAnimation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="26c5f967-76f6-449b-8b4c-de6de4415591">
+      <ID>Is Category Comedy</ID>
+      <Name>Is Category Comedy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ad5be6b4-2056-45c0-808f-bac0aef8adbd">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="080bc852-8ba6-474b-8456-2c14f6da60f9">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryComedy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b7b03e25-6b67-4ec4-b01a-259de641762b">
+      <ID>Is Category Documentary</ID>
+      <Name>Is Category Documentary</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="22cb328e-a0ff-4fcc-a9f8-ca9a8f2c7807">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a5e9f37-70a3-4834-849e-c3b48a7adc12">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryDocumentary</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7243259c-69c6-43aa-8267-964a8530982d">
+      <ID>Is Category Drama</ID>
+      <Name>Is Category Drama</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0b961dc5-88b4-4a42-8d37-0de8a8169d69">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df6816b1-b5d4-4b8a-b4b0-7d17edb1ac1c">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryDrama</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d327642-d060-4b01-b8e0-d633fbd09f7f">
+      <ID>Is Category Fantasy</ID>
+      <Name>Is Category Fantasy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3c7c5c18-e08e-4350-ac17-a7e601b9e770">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5211ef7f-f190-449a-8072-71a6b955bc6a">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryFantasy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dbf5b8c5-a2fc-4b09-b4d8-aecbc53b658c">
+      <ID>Is Category Historical</ID>
+      <Name>Is Category Historical</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5bbbeaf2-6755-4cac-b3ae-c2d61ba808f3">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d876831c-443a-4614-b360-ef27dda79699">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryHistorical</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c186dfa8-c315-46ca-a839-078130a7ef15">
+      <ID>Is Category Horror</ID>
+      <Name>Is Category Horror</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b83947c4-a839-4450-b8fd-b31d26ee880f">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b741adba-0c0c-41ff-a0ad-f9edbed8b707">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryHorror</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a21b9986-aa71-481c-9258-e39e64e159d1">
+      <ID>Is Category Musical</ID>
+      <Name>Is Category Musical</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ec55ae97-b4bf-4315-a8c0-e6bf709d47ba">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43d1e60e-db6c-40cc-b3fd-50f324610984">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryMusical</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="52fd0e95-4a55-4af7-b3b1-1d88ede6aed9">
+      <ID>Is Category Noir</ID>
+      <Name>Is Category Noir</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3dcfb086-0dde-4d65-a41e-9dc2aad54b45">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cec7106f-44e3-4c23-ac57-3acb3e333ee6">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryNoir</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="334aab7b-e65f-4545-9395-22bd6f2f985e">
+      <ID>Is Category Romance</ID>
+      <Name>Is Category Romance</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1d931b9-6171-4042-8a64-a82d4ee706c2">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff01d95d-49be-4080-88b8-9d91618299be">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryRomance</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="43e1a2d3-62ec-4d9d-978a-7969c497ea46">
+      <ID>Is Category Sci Fi</ID>
+      <Name>Is Category Sci Fi</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fccdfaeb-c475-45cd-a50a-bd3f28e61514">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b6466815-b5ec-42bd-a67b-40204549b18d">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategorySciFi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a8c3aecd-2de5-44db-9a06-6b2ae8e5a85b">
+      <ID>Is Category Sports</ID>
+      <Name>Is Category Sports</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="62de2f13-a534-4ff4-8c41-e6e9ed82746f">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13aecfc0-b4cd-430d-8c5f-539f3ed28136">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategorySports</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b352d8d2-1fde-4857-9a4e-afa8e1b83d43">
+      <ID>Is Category Thriller</ID>
+      <Name>Is Category Thriller</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ad3fbd00-282d-4750-97c9-c2e72dc1a534">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f344f9c-f7e0-41e3-97c0-a83468041982">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryThriller</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a3a29a8-4a49-40df-b6c1-320be2658e00">
+      <ID>Is Category Western</ID>
+      <Name>Is Category Western</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cacbcbd6-a856-4321-982d-9f021e8b796c">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ea2076a-43d7-4f37-a159-0966123ea728">
+            <TableID>dbo_DimFilm</TableID>
+            <ColumnID>IsCategoryWestern</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
